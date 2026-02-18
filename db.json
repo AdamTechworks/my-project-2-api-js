@@ -1,27 +1,188 @@
-{
-  "products": [
-    { "id": 1, "name": "Andromeda Crystal Lamp", "price": 39.99, "category": "Home", "tags": ["cosmic","light","decor"] },
-    { "id": 2, "name": "Nebula Notebook", "price": 12.5, "category": "Stationery", "tags": ["journal","writing","nebula"] },
-    { "id": 3, "name": "Orion Mug", "price": 16, "category": "Kitchen", "tags": ["mug","coffee","orion"] },
-    { "id": 4, "name": "Galaxy Throw Blanket", "price": 29.99, "category": "Home", "tags": ["blanket","space","comfort"] },
-    { "id": 5, "name": "Star Map Poster", "price": 18.75, "category": "Decor", "tags": ["poster","stars","wall"] },
-    { "id": 6, "name": "Meteorite Paperweight", "price": 22.5, "category": "Office", "tags": ["desk","office","space"] },
-    { "id": 7, "name": "Cosmic Phone Case", "price": 14.99, "category": "Tech", "tags": ["phone","case","galaxy"] },
-    { "id": 8, "name": "Planet Coaster Set", "price": 19.99, "category": "Kitchen", "tags": ["coasters","planets","table"] },
-    { "id": 9, "name": "Moon Phase Wall Clock", "price": 34.99, "category": "Decor", "tags": ["clock","moon","wall"] },
-    { "id": 10, "name": "Asteroid Keychain", "price": 7.5, "category": "Accessories", "tags": ["keys","small","space"] },
-    { "id": 11, "name": "Rocket Ship Lamp", "price": 27.99, "category": "Home", "tags": ["lamp","rocket","light"] },
-    { "id": 12, "name": "Astronaut Figurine", "price": 15, "category": "Decor", "tags": ["figure","astronaut","display"] },
-    { "id": 13, "name": "Stargazer Journal", "price": 13.99, "category": "Stationery", "tags": ["journal","writing","night"] },
-    { "id": 14, "name": "Comet Pen Set", "price": 11.99, "category": "Office", "tags": ["pens","office","school"] },
-    { "id": 15, "name": "Solar System Puzzle", "price": 21.99, "category": "Games", "tags": ["puzzle","planets","kids"] },
-    { "id": 16, "name": "Galaxy Water Bottle", "price": 17.99, "category": "Accessories", "tags": ["bottle","drink","travel"] },
-    { "id": 17, "name": "Lunar Night Light", "price": 20.99, "category": "Home", "tags": ["light","moon","bedroom"] },
-    { "id": 18, "name": "Satellite Desk Lamp", "price": 32.99, "category": "Office", "tags": ["lamp","desk","office"] },
-    { "id": 19, "name": "Constellation Hoodie", "price": 42.5, "category": "Clothing", "tags": ["hoodie","wear","stars"] },
-    { "id": 20, "name": "Space Sticker Pack", "price": 8.99, "category": "Accessories", "tags": ["stickers","fun","kids"] }
-  ],
+{"products": [
+  {
+    "id": 1,
+    "name": "Andromeda Crystal Lamp",
+    "price": 39.99,
+    "category": "Home",
+    "tags": ["cosmic", "light", "decor"],
+    "image": "/images/andromeda-crystal-lamp.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Nebula Notebook",
+    "price": 12.5,
+    "category": "Stationery",
+    "tags": ["journal", "writing", "nebula"],
+    "image": "/images/nebula-notebook.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Orion Mug",
+    "price": 16,
+    "category": "Kitchen",
+    "tags": ["mug", "coffee", "orion"],
+    "image": "/images/orion-mug.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Galaxy Throw Blanket",
+    "price": 29.99,
+    "category": "Home",
+    "tags": ["blanket", "space", "comfort"],
+    "image": "/images/galaxy-throw-blanket.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Star Map Poster",
+    "price": 18.75,
+    "category": "Decor",
+    "tags": ["poster", "stars", "wall"],
+    "image": "/images/star-map-poster.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Meteorite Paperweight",
+    "price": 22.5,
+    "category": "Office",
+    "tags": ["desk", "office", "space"],
+    "image": "/images/meteorite-paperweight.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Cosmic Phone Case",
+    "price": 14.99,
+    "category": "Tech",
+    "tags": ["phone", "case", "galaxy"],
+    "image": "/images/cosmic-phone-case.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Planet Coaster Set",
+    "price": 19.99,
+    "category": "Kitchen",
+    "tags": ["coasters", "planets", "table"],
+    "image": "/images/planet-coaster-set.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Moon Phase Wall Clock",
+    "price": 34.99,
+    "category": "Decor",
+    "tags": ["clock", "moon", "wall"],
+    "image": "/images/moon-phase-wall-clock.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Asteroid Keychain",
+    "price": 7.5,
+    "category": "Accessories",
+    "tags": ["keys", "small", "space"],
+    "image": "/images/asteroid-keychain.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Rocket Ship Lamp",
+    "price": 27.99,
+    "category": "Home",
+    "tags": ["lamp", "rocket", "light"],
+    "image": "/images/rocket-ship-lamp.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Astronaut Figurine",
+    "price": 15,
+    "category": "Decor",
+    "tags": ["figure", "astronaut", "display"],
+    "image": "/images/astronaut-figurine.jpg"
+  },
+  {
+    "id": 13,
+    "name": "Stargazer Journal",
+    "price": 13.99,
+    "category": "Stationery",
+    "tags": ["journal", "writing", "night"],
+    "image": "/images/stargazer-journal.jpg"
+  },
+  {
+    "id": 14,
+    "name": "Comet Pen Set",
+    "price": 11.99,
+    "category": "Office",
+    "tags": ["pens", "office", "school"],
+    "image": "/images/comet-pen-set.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Solar System Puzzle",
+    "price": 21.99,
+    "category": "Games",
+    "tags": ["puzzle", "planets", "kids"],
+    "image": "/images/solar-system-puzzle.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Galaxy Water Bottle",
+    "price": 17.99,
+    "category": "Accessories",
+    "tags": ["bottle", "drink", "travel"],
+    "image": "/images/galaxy-water-bottle.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Lunar Night Light",
+    "price": 20.99,
+    "category": "Home",
+    "tags": ["light", "moon", "bedroom"],
+    "image": "/images/lunar-night-light.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Satellite Desk Lamp",
+    "price": 32.99,
+    "category": "Office",
+    "tags": ["lamp", "desk", "office"],
+    "image": "/images/satellite-desk-lamp.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Constellation Hoodie",
+    "price": 42.5,
+    "category": "Clothing",
+    "tags": ["hoodie", "wear", "stars"],
+    "image": "/images/constellation-hoodie.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Space Sticker Pack",
+    "price": 8.99,
+    "category": "Accessories",
+    "tags": ["stickers", "fun", "kids"],
+    "image": "/images/space-sticker-pack.jpg"
+  }
+],
+
   "reviews": [
-    { "id": 1, "productId": 1, "name": "Sydney", "rating": 5, "comment": "Cozy galaxy vibes." }
-  ]
+  {
+    "id": 1,
+    "productId": 1,
+    "name": "Sydney",
+    "rating": 5,
+    "comment": "Absolutely love this lamp!"
+  },
+  {
+    "id": 2,
+    "productId": 2,
+    "name": "Adam",
+    "rating": 4,
+    "comment": "Notebook quality is great."
+  },
+  {
+    "id": 3,
+    "productId": 3,
+    "name": "Theo",
+    "rating": 5,
+    "comment": "My favorite mug ever."
+  }
+]
 }
+
