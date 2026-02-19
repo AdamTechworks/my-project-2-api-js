@@ -11,7 +11,14 @@ async function loadProducts() {
 
   products.forEach(product => {
     const li = document.createElement("li");
-    li.textContent = `${product.name} - $${product.price}`;
+
+    // clickable product link
+    const a = document.createElement("a");
+    a.href = `/product.html?id=${product.id}`;
+    a.textContent = `${product.name} - $${product.price}`;
+    a.style.textDecoration = "none";
+
+    li.appendChild(a);
     list.appendChild(li);
   });
 }

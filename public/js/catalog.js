@@ -12,9 +12,16 @@ let timer;
 function renderProducts(products) {
   results.innerHTML = "";
 
-  products.forEach(p => {
+  products.forEach((p) => {
     const li = document.createElement("li");
-    li.textContent = `${p.name} - $${p.price}`;
+
+    // clickable link to product page
+    const a = document.createElement("a");
+    a.href = `/product.html?id=${p.id}`;
+    a.textContent = `${p.name} - $${p.price}`;
+    a.style.textDecoration = "none";
+
+    li.appendChild(a);
     results.appendChild(li);
   });
 }
@@ -35,7 +42,7 @@ async function searchProducts(query) {
   const data = await getProducts();
   const q = query.toLowerCase();
 
-  const matches = data.filter(p => {
+  const matches = data.filter((p) => {
     const name = (p.name || "").toLowerCase();
     const category = (p.category || "").toLowerCase();
     const tags = Array.isArray(p.tags) ? p.tags.join(" ").toLowerCase() : "";

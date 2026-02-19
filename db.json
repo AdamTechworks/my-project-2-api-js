@@ -1,188 +1,406 @@
-{"products": [
-  {
-    "id": 1,
-    "name": "Andromeda Crystal Lamp",
-    "price": 39.99,
-    "category": "Home",
-    "tags": ["cosmic", "light", "decor"],
-    "image": "/images/andromeda-crystal-lamp.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Nebula Notebook",
-    "price": 12.5,
-    "category": "Stationery",
-    "tags": ["journal", "writing", "nebula"],
-    "image": "/images/nebula-notebook.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Orion Mug",
-    "price": 16,
-    "category": "Kitchen",
-    "tags": ["mug", "coffee", "orion"],
-    "image": "/images/orion-mug.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Galaxy Throw Blanket",
-    "price": 29.99,
-    "category": "Home",
-    "tags": ["blanket", "space", "comfort"],
-    "image": "/images/galaxy-throw-blanket.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Star Map Poster",
-    "price": 18.75,
-    "category": "Decor",
-    "tags": ["poster", "stars", "wall"],
-    "image": "/images/star-map-poster.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Meteorite Paperweight",
-    "price": 22.5,
-    "category": "Office",
-    "tags": ["desk", "office", "space"],
-    "image": "/images/meteorite-paperweight.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Cosmic Phone Case",
-    "price": 14.99,
-    "category": "Tech",
-    "tags": ["phone", "case", "galaxy"],
-    "image": "/images/cosmic-phone-case.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Planet Coaster Set",
-    "price": 19.99,
-    "category": "Kitchen",
-    "tags": ["coasters", "planets", "table"],
-    "image": "/images/planet-coaster-set.jpg"
-  },
-  {
-    "id": 9,
-    "name": "Moon Phase Wall Clock",
-    "price": 34.99,
-    "category": "Decor",
-    "tags": ["clock", "moon", "wall"],
-    "image": "/images/moon-phase-wall-clock.jpg"
-  },
-  {
-    "id": 10,
-    "name": "Asteroid Keychain",
-    "price": 7.5,
-    "category": "Accessories",
-    "tags": ["keys", "small", "space"],
-    "image": "/images/asteroid-keychain.jpg"
-  },
-  {
-    "id": 11,
-    "name": "Rocket Ship Lamp",
-    "price": 27.99,
-    "category": "Home",
-    "tags": ["lamp", "rocket", "light"],
-    "image": "/images/rocket-ship-lamp.jpg"
-  },
-  {
-    "id": 12,
-    "name": "Astronaut Figurine",
-    "price": 15,
-    "category": "Decor",
-    "tags": ["figure", "astronaut", "display"],
-    "image": "/images/astronaut-figurine.jpg"
-  },
-  {
-    "id": 13,
-    "name": "Stargazer Journal",
-    "price": 13.99,
-    "category": "Stationery",
-    "tags": ["journal", "writing", "night"],
-    "image": "/images/stargazer-journal.jpg"
-  },
-  {
-    "id": 14,
-    "name": "Comet Pen Set",
-    "price": 11.99,
-    "category": "Office",
-    "tags": ["pens", "office", "school"],
-    "image": "/images/comet-pen-set.jpg"
-  },
-  {
-    "id": 15,
-    "name": "Solar System Puzzle",
-    "price": 21.99,
-    "category": "Games",
-    "tags": ["puzzle", "planets", "kids"],
-    "image": "/images/solar-system-puzzle.jpg"
-  },
-  {
-    "id": 16,
-    "name": "Galaxy Water Bottle",
-    "price": 17.99,
-    "category": "Accessories",
-    "tags": ["bottle", "drink", "travel"],
-    "image": "/images/galaxy-water-bottle.jpg"
-  },
-  {
-    "id": 17,
-    "name": "Lunar Night Light",
-    "price": 20.99,
-    "category": "Home",
-    "tags": ["light", "moon", "bedroom"],
-    "image": "/images/lunar-night-light.jpg"
-  },
-  {
-    "id": 18,
-    "name": "Satellite Desk Lamp",
-    "price": 32.99,
-    "category": "Office",
-    "tags": ["lamp", "desk", "office"],
-    "image": "/images/satellite-desk-lamp.jpg"
-  },
-  {
-    "id": 19,
-    "name": "Constellation Hoodie",
-    "price": 42.5,
-    "category": "Clothing",
-    "tags": ["hoodie", "wear", "stars"],
-    "image": "/images/constellation-hoodie.jpg"
-  },
-  {
-    "id": 20,
-    "name": "Space Sticker Pack",
-    "price": 8.99,
-    "category": "Accessories",
-    "tags": ["stickers", "fun", "kids"],
-    "image": "/images/space-sticker-pack.jpg"
-  }
-],
-
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Andromeda Crystal Lamp",
+      "price": 39.99,
+      "category": "Home",
+      "tags": [
+        "cosmic",
+        "light",
+        "decor"
+      ],
+      "image": "/images/andromeda-crystal-lamp.jpg",
+      "description": "A soft-glow crystal lamp that adds instant galaxy vibes to any room."
+    },
+    {
+      "id": 2,
+      "name": "Nebula Notebook",
+      "price": 12.5,
+      "category": "Stationery",
+      "tags": [
+        "journal",
+        "writing",
+        "nebula"
+      ],
+      "image": "/images/nebula-notebook.jpg",
+      "description": "A smooth, space-themed notebook for notes, sketches, or midnight brain dumps."
+    },
+    {
+      "id": 3,
+      "name": "Orion Mug",
+      "price": 16,
+      "category": "Kitchen",
+      "tags": [
+        "mug",
+        "coffee",
+        "orion"
+      ],
+      "image": "/images/orion-mug.jpg",
+      "description": "A sturdy mug for coffee, tea, or potion-making—constellation energy included."
+    },
+    {
+      "id": 4,
+      "name": "Galaxy Throw Blanket",
+      "price": 29.99,
+      "category": "Home",
+      "tags": [
+        "blanket",
+        "space",
+        "comfort"
+      ],
+      "image": "/images/galaxy-throw-blanket.jpg",
+      "description": "Cozy up in a blanket that looks like a night sky—soft, warm, and ridiculously comfy."
+    },
+    {
+      "id": 5,
+      "name": "Star Map Poster",
+      "price": 18.75,
+      "category": "Decor",
+      "tags": [
+        "poster",
+        "stars",
+        "wall"
+      ],
+      "image": "/images/star-map-poster.jpg",
+      "description": "A clean star map print that makes your wall look like a planetarium."
+    },
+    {
+      "id": 6,
+      "name": "Meteorite Paperweight",
+      "price": 22.5,
+      "category": "Office",
+      "tags": [
+        "desk",
+        "office",
+        "space"
+      ],
+      "image": "/images/meteorite-paperweight.jpg",
+      "description": "A heavy desk paperweight with meteor vibes—keeps papers down and mood up."
+    },
+    {
+      "id": 7,
+      "name": "Cosmic Phone Case",
+      "price": 14.99,
+      "category": "Tech",
+      "tags": [
+        "phone",
+        "case",
+        "galaxy"
+      ],
+      "image": "/images/cosmic-phone-case.jpg",
+      "description": "A galaxy-style phone case that protects your device and looks cool doing it."
+    },
+    {
+      "id": 8,
+      "name": "Planet Coaster Set",
+      "price": 19.99,
+      "category": "Kitchen",
+      "tags": [
+        "coasters",
+        "planets",
+        "table"
+      ],
+      "image": "/images/planet-coaster-set.jpg",
+      "description": "A set of planet-themed coasters to keep tables safe from drinks and chaos."
+    },
+    {
+      "id": 9,
+      "name": "Moon Phase Wall Clock",
+      "price": 34.99,
+      "category": "Decor",
+      "tags": [
+        "clock",
+        "moon",
+        "wall"
+      ],
+      "image": "/images/moon-phase-wall-clock.jpg",
+      "description": "A moon-phase inspired wall clock that turns ‘what time is it’ into a vibe."
+    },
+    {
+      "id": 10,
+      "name": "Asteroid Keychain",
+      "price": 7.5,
+      "category": "Accessories",
+      "tags": [
+        "keys",
+        "small",
+        "space"
+      ],
+      "image": "/images/asteroid-keychain.jpg",
+      "description": "A small keychain with big space energy—easy to spot, hard to lose."
+    },
+    {
+      "id": 11,
+      "name": "Rocket Ship Lamp",
+      "price": 27.99,
+      "category": "Home",
+      "tags": [
+        "lamp",
+        "rocket",
+        "light"
+      ],
+      "image": "/images/rocket-ship-lamp.jpg",
+      "description": "A fun rocket-shaped lamp that adds warm light and launch-day vibes."
+    },
+    {
+      "id": 12,
+      "name": "Astronaut Figurine",
+      "price": 15,
+      "category": "Decor",
+      "tags": [
+        "figure",
+        "astronaut",
+        "display"
+      ],
+      "image": "/images/astronaut-figurine.jpg",
+      "description": "A small astronaut figure for shelves, desks, or anywhere you need a tiny explorer."
+    },
+    {
+      "id": 13,
+      "name": "Stargazer Journal",
+      "price": 13.99,
+      "category": "Stationery",
+      "tags": [
+        "journal",
+        "writing",
+        "night"
+      ],
+      "image": "/images/stargazer-journal.jpg",
+      "description": "A journal made for night thoughts, dream logs, and planning your next cosmic era."
+    },
+    {
+      "id": 14,
+      "name": "Comet Pen Set",
+      "price": 11.99,
+      "category": "Office",
+      "tags": [
+        "pens",
+        "office",
+        "school"
+      ],
+      "image": "/images/comet-pen-set.jpg",
+      "description": "A smooth-writing pen set for school, work, or writing dramatic villain monologues."
+    },
+    {
+      "id": 15,
+      "name": "Solar System Puzzle",
+      "price": 21.99,
+      "category": "Games",
+      "tags": [
+        "puzzle",
+        "planets",
+        "kids"
+      ],
+      "image": "/images/solar-system-puzzle.jpg",
+      "description": "A solar-system themed puzzle that’s fun, chill, and secretly educational."
+    },
+    {
+      "id": 16,
+      "name": "Galaxy Water Bottle",
+      "price": 17.99,
+      "category": "Accessories",
+      "tags": [
+        "bottle",
+        "drink",
+        "travel"
+      ],
+      "image": "/images/galaxy-water-bottle.jpg",
+      "description": "A reusable water bottle with a galaxy design—hydration, but make it cosmic."
+    },
+    {
+      "id": 17,
+      "name": "Lunar Night Light",
+      "price": 20.99,
+      "category": "Home",
+      "tags": [
+        "light",
+        "moon",
+        "bedroom"
+      ],
+      "image": "/images/lunar-night-light.jpg",
+      "description": "A gentle moon-inspired night light that makes bedtime feel like a calm planet."
+    },
+    {
+      "id": 18,
+      "name": "Satellite Desk Lamp",
+      "price": 32.99,
+      "category": "Office",
+      "tags": [
+        "lamp",
+        "desk",
+        "office"
+      ],
+      "image": "/images/satellite-desk-lamp.jpg",
+      "description": "A desk lamp with clean, modern lines—bright enough for work, cool enough for display."
+    },
+    {
+      "id": 19,
+      "name": "Constellation Hoodie",
+      "price": 42.5,
+      "category": "Clothing",
+      "tags": [
+        "hoodie",
+        "wear",
+        "stars"
+      ],
+      "image": "/images/constellation-hoodie.jpg",
+      "description": "A warm hoodie with constellation vibes—soft on the inside, main character on the outside."
+    },
+    {
+      "id": 20,
+      "name": "Space Sticker Pack",
+      "price": 8.99,
+      "category": "Accessories",
+      "tags": [
+        "stickers",
+        "fun",
+        "kids"
+      ],
+      "image": "/images/space-sticker-pack.jpg",
+      "description": "A sticker pack full of space icons—perfect for laptops, bottles, notebooks, and chaos."
+    }
+  ],
   "reviews": [
-  {
-    "id": 1,
-    "productId": 1,
-    "name": "Sydney",
-    "rating": 5,
-    "comment": "Absolutely love this lamp!"
-  },
-  {
-    "id": 2,
-    "productId": 2,
-    "name": "Adam",
-    "rating": 4,
-    "comment": "Notebook quality is great."
-  },
-  {
-    "id": 3,
-    "productId": 3,
-    "name": "Theo",
-    "rating": 5,
-    "comment": "My favorite mug ever."
-  }
-]
+    {
+      "id": 1,
+      "productId": 1,
+      "name": "Lena Morales",
+      "rating": 5,
+      "comment": "The glow is perfect. Instant cozy galaxy corner."
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "name": "Marcus Chen",
+      "rating": 4,
+      "comment": "Paper quality feels good and it lays flat. Solid buy."
+    },
+    {
+      "id": 3,
+      "productId": 3,
+      "name": "Ava Thompson",
+      "rating": 5,
+      "comment": "Best mug ever. I would drink hot chocolate from it forever."
+    },
+    {
+      "id": 4,
+      "productId": 4,
+      "name": "Noah Patel",
+      "rating": 5,
+      "comment": "Super soft. It’s become the default couch blanket."
+    },
+    {
+      "id": 5,
+      "productId": 5,
+      "name": "Sophie Bennett",
+      "rating": 4,
+      "comment": "Looks clean on the wall and the print is crisp."
+    },
+    {
+      "id": 6,
+      "productId": 6,
+      "name": "Ethan Walker",
+      "rating": 4,
+      "comment": "Heavy enough to actually work as a paperweight. Cute too."
+    },
+    {
+      "id": 7,
+      "productId": 7,
+      "name": "Mia Rodriguez",
+      "rating": 4,
+      "comment": "Fits well and feels sturdy. Design is sick."
+    },
+    {
+      "id": 8,
+      "productId": 8,
+      "name": "Oliver Grant",
+      "rating": 5,
+      "comment": "They look adorable on the table and don’t slide around."
+    },
+    {
+      "id": 9,
+      "productId": 9,
+      "name": "Charlotte Kim",
+      "rating": 5,
+      "comment": "Moon phase vibe is elite. It’s a conversation starter."
+    },
+    {
+      "id": 10,
+      "productId": 10,
+      "name": "Lucas Rivera",
+      "rating": 4,
+      "comment": "Tiny but cute. My keys are easier to find now."
+    },
+    {
+      "id": 11,
+      "productId": 11,
+      "name": "Henry Collins",
+      "rating": 5,
+      "comment": "Rocket lamp = coolest thing in my room."
+    },
+    {
+      "id": 12,
+      "productId": 12,
+      "name": "Emily Foster",
+      "rating": 4,
+      "comment": "Looks great on a shelf. Little astronaut energy boost."
+    },
+    {
+      "id": 13,
+      "productId": 13,
+      "name": "Daniel Brooks",
+      "rating": 4,
+      "comment": "Nice journal. Good for notes and planning."
+    },
+    {
+      "id": 14,
+      "productId": 14,
+      "name": "Grace Nguyen",
+      "rating": 5,
+      "comment": "Writes smooth and doesn’t smudge. I’m obsessed."
+    },
+    {
+      "id": 15,
+      "productId": 15,
+      "name": "Logan Price",
+      "rating": 5,
+      "comment": "Fun puzzle and I learned planet names again."
+    },
+    {
+      "id": 16,
+      "productId": 16,
+      "name": "Isabella Cruz",
+      "rating": 4,
+      "comment": "Cute bottle and doesn’t leak in my bag."
+    },
+    {
+      "id": 17,
+      "productId": 17,
+      "name": "Caleb Turner",
+      "rating": 5,
+      "comment": "Perfect soft light for the hallway at night."
+    },
+    {
+      "id": 18,
+      "productId": 18,
+      "name": "Harper Scott",
+      "rating": 4,
+      "comment": "Bright and clean looking. Makes the desk feel official."
+    },
+    {
+      "id": 19,
+      "productId": 19,
+      "name": "Jack Sullivan",
+      "rating": 5,
+      "comment": "Comfy and warm. The star design is subtle but cool."
+    },
+    {
+      "id": 20,
+      "productId": 20,
+      "name": "Ella Peterson",
+      "rating": 5,
+      "comment": "Stickers!!! I put them on everything."
+    }
+  ]
 }
-

@@ -4,34 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product</title>
-  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
 
-  <!-- NAV BAR (used by home + catalog) -->
   <nav id="nav"></nav>
 
-  <h1>Product Details</h1>
+  <main class="container">
+    <h1>Product Details</h1>
 
-  <!-- Product info loads (GET request) -->
-  <div id="productContainer"></div>
+    <p id="pageStatus"></p>
 
-  <hr>
+    <section id="productContainer"></section>
 
-  <h2>Reviews</h2>
-  <ul id="reviewList"></ul>
+    <hr />
 
-  <h3>Add a Review</h3>
-  <form id="reviewForm">
-    <input id="reviewName" placeholder="Your name" required>
-    <input id="reviewRating" type="number" min="1" max="5" placeholder="Rating 1-5" required>
-    <input id="reviewComment" placeholder="Comment" required>
-    <button type="submit">Submit</button>
-    <p id="reviewStatus"></p>
-  </form>
+    <section>
+      <h2>Reviews</h2>
+      <ul id="reviewList"></ul>
+    </section>
 
-  <!-- load nav.js AND fetch product data -->
+    <hr />
+
+    <section>
+      <h3>Add a Review</h3>
+      <form id="reviewForm">
+        <input id="reviewName" placeholder="Your name" required />
+        <input id="reviewRating" type="number" min="1" max="5" placeholder="Rating 1-5" required />
+        <input id="reviewComment" placeholder="Comment" required />
+        <button type="submit">Submit</button>
+        <p id="reviewStatus"></p>
+      </form>
+    </section>
+  </main>
+
   <script type="module" src="/js/product.js"></script>
-
 </body>
 </html>

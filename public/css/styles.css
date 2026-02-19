@@ -99,3 +99,24 @@ input {
   }
 
 }
+
+
+/* --product*/
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.product-detail {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.product-image {
+  width: 240px;
+  max-width: 40vw;
+  border-radius: 8px;
+}
