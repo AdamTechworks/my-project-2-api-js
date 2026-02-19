@@ -11,10 +11,16 @@
   <h1>Catalog</h1>
 
   <label for="searchInput">Search products:</label>
-  <input id="searchInput" type="text" placeholder="Type to search..." />
+    <input id="searchInput" type="text" placeholder="Type to search..." />
 
-  <p id="status"></p>
-  <ul id="results"></ul>
+    <p id="status"></p>
+    <ul id="results"></ul>
+
+  <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter">
+      <option value="all">All</option>
+    </select>
+
 
   <script type="module" src="/js/catalog.js"></script>
 </body>

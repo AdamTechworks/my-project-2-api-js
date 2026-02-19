@@ -4,12 +4,36 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Products</title>
-  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/carousel.css" />
 </head>
 
 <body>
-  <h1>Product List</h1>
-  <ul id="productList"></ul>
+  <nav id="nav"></nav>
+
+  <main class="container">
+    <h1>Product List</h1>
+
+    <p id="homeStatus"></p>
+
+    <section class="carousel">
+      <button id="carouselPrev" class="carousel-btn" aria-label="Previous">‹</button>
+
+      <a id="carouselLink" class="carousel-card" href="#">
+        <img id="carouselImg" class="carousel-img" alt="" />
+        <div class="carousel-text">
+          <h2 id="carouselName"></h2>
+          <p id="carouselPrice"></p>
+          <p id="carouselStatus" class="carousel-status"></p>
+        </div>
+      </a>
+
+      <button id="carouselNext" class="carousel-btn" aria-label="Next">›</button>
+    </section>
+
+    <ul id="productList"></ul>
+  </main>
 
   <script type="module" src="/js/home.js"></script>
 </body>
