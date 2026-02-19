@@ -3,24 +3,28 @@ import { getProducts } from "/js/api.js";
 
 loadNav("home");
 
-async function loadProductsList(products) {
+/* ---------- PRODUCT LIST (bottom of page) ---------- */
+
+async function loadProducts() {
+  const products = await getProducts();
+
   const list = document.getElementById("productList");
   list.innerHTML = "";
 
-  products.forEach((product) => {
+  products.forEach(product => {
     const li = document.createElement("li");
 
-    const a = document.createElement("a");
-    a.href = `/product.html?id=${product.id}`;
-    a.textContent = `${product.name} - $${product.price}`;
-    a.style.textDecoration = "none";
+    const link = document.createElement("a");
+    link.href = `/product.html?id=${product.id}`;
+    link.textContent = `${product.name} - $${product.price}`;
 
-    li.appendChild(a);
+    li.appendChild(link);
     list.appendChild(li);
   });
 }
 
-// Carousel 
+/* ---------- CAROUSEL ---------- */
+
 function pickRandomUnique(products, count) {
   const copy = [...products];
   const picked = [];
@@ -29,78 +33,67 @@ function pickRandomUnique(products, count) {
     const idx = Math.floor(Math.random() * copy.length);
     picked.push(copy.splice(idx, 1)[0]);
   }
-
   return picked;
 }
 
-function initCarousel(allProducts) {
+async function initCarousel() {
+  const allProducts = await getProducts();
+
+  const track = document.getElementById("carouselTrack");
   const prevBtn = document.getElementById("carouselPrev");
   const nextBtn = document.getElementById("carouselNext");
-  const img = document.getElementById("carouselImg");
-  const name = document.getElementById("carouselName");
-  const price = document.getElementById("carouselPrice");
-  const link = document.getElementById("carouselLink");
-  const status = document.getElementById("carouselStatus");
 
-  if (!prevBtn || !nextBtn || !img || !name || !price || !link) return;
-
-  let picks = pickRandomUnique(allProducts, 3);
-  let i = 0;
+  // We grab 9 so arrows can rotate through sets of 3
+  let picks = pickRandomUnique(allProducts, 9);
+  let page = 0; // 0,1,2
 
   function render() {
-    if (picks.length === 0) return;
+    track.innerHTML = "";
 
-    const p = picks[i];
-    img.src = p.image;
-    img.alt = p.name;
-    name.textContent = p.name;
-    price.textContent = `$${p.price}`;
-    link.href = `/product.html?id=${p.id}`;
+    const start = page * 3;
+    const visible = picks.slice(start, start + 3);
 
-    if (status) status.textContent = `Featured ${i + 1} of ${picks.length}`;
-  }
+    visible.forEach(product => {
+      const card = document.createElement("a");
+      card.className = "carousel-card";
+      card.href = `/product.html?id=${product.id}`;
 
-  function prev() {
-    i = (i - 1 + picks.length) % picks.length;
-    render();
+      card.innerHTML = `
+        <img class="carousel-img" src="${product.image}" alt="${product.name}">
+        <div class="carousel-text">
+          <h2>${product.name}</h2>
+          <p class="carousel-desc">${product.description}</p>
+        </div>
+      `;
+
+      track.appendChild(card);
+    });
   }
 
   function next() {
-    i = (i + 1) % picks.length;
+    page = (page + 1) % 3;
+    render();
+  }
+
+  function prev() {
+    page = (page - 1 + 3) % 3;
     render();
   }
 
   prevBtn.addEventListener("click", prev);
   nextBtn.addEventListener("click", next);
 
-  // refresh the 3 picks periodically
+  // auto refresh every 15s (new random items)
   setInterval(() => {
-    picks = pickRandomUnique(allProducts, 3);
-    i = 0;
+    picks = pickRandomUnique(allProducts, 9);
+    page = 0;
     render();
   }, 15000);
 
   render();
 }
-// End of Carousel 
 
-async function initHome() {
-  const pageStatus = document.getElementById("homeStatus");
+/* ---------- START PAGE ---------- */
 
-  try {
-    if (pageStatus) pageStatus.textContent = "Loading products...";
-
-    const products = await getProducts();
-
-    if (pageStatus) pageStatus.textContent = "";
-    await loadProductsList(products);
-    initCarousel(products);
-  } catch (err) {
-    console.error(err);
-    if (pageStatus) {
-      pageStatus.textContent = "⚠️ Could not load products. Is the server running (npm start)?";
-    }
-  }
-}
-
-initHome();
+loadProducts();
+initCarousel();
