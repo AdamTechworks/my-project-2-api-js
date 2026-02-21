@@ -1,5 +1,4 @@
-/* ---------- GLOBAL ---------- */
-
+/*  main styles for the entire site  */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -19,7 +18,7 @@ h1 {
   text-align: center;
 }
 
-/* ---------- NAVBAR ---------- */
+/*  NAVBAR  */
 
 nav {
   background: #1e293b;
@@ -40,7 +39,7 @@ nav a:hover {
   color: white;
 }
 
-/* ---------- PRODUCT LIST ---------- */
+/*  PRODUCT LIST  */
 
 ul {
   list-style: none;
@@ -60,7 +59,7 @@ li:hover {
   transform: scale(1.02);
 }
 
-/* ---------- SEARCH ---------- */
+/*  SEARCH BAR */
 
 input {
   width: 100%;
@@ -80,7 +79,7 @@ input {
   color: #cbd5f5;
 }
 
-/* ---------- RESPONSIVE ---------- */
+/*  RESPONSIVE DESIGN  */
 
 @media (min-width: 700px) {
 
@@ -101,7 +100,7 @@ input {
 }
 
 
-/* --product*/
+/* product container */
 
 .container {
   max-width: 900px;

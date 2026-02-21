@@ -1,0 +1,45 @@
+.catalog-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers it horizontally */
+  gap: 8px;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.catalog-controls input,
+.catalog-controls select {
+  width: 260px;
+  padding: 8px 10px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.catalog-controls label {
+  text-align: center;
+  font-weight: 500;
+}
+
+#results {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 0;
+  list-style: none;
+}
+
+#results li {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  text-align: center;
+}
+
+#results a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+#results a:hover {
+  text-decoration: underline;
+}

@@ -4,7 +4,7 @@ import { getProducts } from "/js/api.js";
 loadNav("catalog");
 
 const input = document.getElementById("searchInput");
-const categoryFilter = document.getElementById("categoryFilter");
+const categoryFilter = document.getElementById("categorySelect");
 const results = document.getElementById("results");
 const status = document.getElementById("status");
 
