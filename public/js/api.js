@@ -1,21 +1,9 @@
 const BASE_URL = "http://localhost:3000";
 
-async function safeFetch(url, options = {}) {
-  try {
-    const res = await fetch(url, options);
-    if (!res.ok) {
-      return { ok: false, status: res.status, data: null };
-    }
-    //a return that states an error during fetching
-    const data = await res.json();
-    return { ok: true, status: res.status, data };
-  } catch (err) { //server offline
-    return { ok: false, status: 0, data: null };
-  }
-}
-
 export async function getProducts() {
-  return await safeFetch(`${BASE_URL}/PRODUCTS`);
+  const res = await fetch(`${BASE_URL}/products`);
+  if (!res.ok) throw new Error("Failed to fetch products");
+  return res.json();
 }
 
 export async function getProductById(id) {
