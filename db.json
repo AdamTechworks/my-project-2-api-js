@@ -259,8 +259,23 @@
       ],
       "image": "/images/space-sticker-pack.jpg",
       "description": "A sticker pack full of space icons—perfect for laptops, bottles, notebooks, and chaos."
+    },
+    {
+      "id": 21,
+      "name": "Aurora Star Candle",
+      "price": 18.99,
+      "category": "Home",
+      "tags": [
+            "candle",
+            "aurora",
+            "cozy"
+          ],
+      "image": "/images/aurora-star-candle.jpg",
+      "description": "A galaxy-inspired candle with a soft glow vibe—perfect for chill nights and main-character mood lighting."
     }
   ],
+
+
   "reviews": [
     {
       "id": 1,
@@ -395,12 +410,26 @@
       "rating": 5,
       "comment": "Comfy and warm. The star design is subtle but cool."
     },
-    {
+        {
       "id": 20,
       "productId": 20,
       "name": "Ella Peterson",
       "rating": 5,
       "comment": "Stickers!!! I put them on everything."
+    },
+    {
+      "id": 21,
+      "productId": 21,
+      "name": "Priya Desai",
+      "rating": 5,
+      "comment": "Smells amazing and the glow is so cozy. Instant vibe upgrade."
+    },
+    {
+      "id": 22,
+      "productId": 21,
+      "name": "Jordan Miller",
+      "rating": 4,
+      "comment": "Burns evenly and looks cute on the shelf. Would buy again."
     }
   ]
 }
