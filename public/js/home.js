@@ -3,29 +3,15 @@ import { getProducts } from "/js/api.js";
 
 loadNav("home");
 
-function showHomeError(message) {
-  const statusEl = document.getElementById("homeStatus");
-  if (statusEl) statusEl.textContent = message;
-}
+/* ---------- PRODUCT LIST (bottom of page) ---------- */
 
 async function loadProducts() {
+  const products = await getProducts();
+
   const list = document.getElementById("productList");
-  if (!list) return;
-
-  const result = await getProducts();
-
-  if (!result || !result.ok) {
-    showHomeError("⚠️ Server is offline. Run: npm start");
-    list.innerHTML = "";
-    return;
-  }
-
-  const products = result.data;
-
-  showHomeError("");
   list.innerHTML = "";
 
-  products.forEach((product) => {
+  products.forEach(product => {
     const li = document.createElement("li");
 
     const link = document.createElement("a");
@@ -37,9 +23,12 @@ async function loadProducts() {
   });
 }
 
+/* ---------- CAROUSEL ---------- */
+
 function pickRandomUnique(products, count) {
   const copy = [...products];
   const picked = [];
+
   while (picked.length < count && copy.length > 0) {
     const idx = Math.floor(Math.random() * copy.length);
     picked.push(copy.splice(idx, 1)[0]);
@@ -48,24 +37,15 @@ function pickRandomUnique(products, count) {
 }
 
 async function initCarousel() {
+  const allProducts = await getProducts();
+
   const track = document.getElementById("carouselTrack");
   const prevBtn = document.getElementById("carouselPrev");
   const nextBtn = document.getElementById("carouselNext");
 
-  if (!track || !prevBtn || !nextBtn) return;
-
-  const result = await getProducts();
-
-  if (!result || !result.ok) {
-    showHomeError("⚠️ Carousel unavailable — server is offline. Run: npm start");
-    track.innerHTML = "";
-    return;
-  }
-
-  const allProducts = result.data;
-
+  // We grab 9 so arrows can rotate through sets of 3
   let picks = pickRandomUnique(allProducts, 9);
-  let page = 0;
+  let page = 0; // 0,1,2
 
   function render() {
     track.innerHTML = "";
@@ -73,7 +53,7 @@ async function initCarousel() {
     const start = page * 3;
     const visible = picks.slice(start, start + 3);
 
-    visible.forEach((product) => {
+    visible.forEach(product => {
       const card = document.createElement("a");
       card.className = "carousel-card";
       card.href = `/product.html?id=${product.id}`;
@@ -82,7 +62,7 @@ async function initCarousel() {
         <img class="carousel-img" src="${product.image}" alt="${product.name}">
         <div class="carousel-text">
           <h2>${product.name}</h2>
-          <p class="carousel-desc">${product.description || ""}</p>
+          <p class="carousel-desc">${product.description}</p>
         </div>
       `;
 
@@ -90,18 +70,30 @@ async function initCarousel() {
     });
   }
 
-  prevBtn.addEventListener("click", () => {
-    page = (page - 1 + 3) % 3;
-    render();
-  });
-
-  nextBtn.addEventListener("click", () => {
+  function next() {
     page = (page + 1) % 3;
     render();
-  });
+  }
+
+  function prev() {
+    page = (page - 1 + 3) % 3;
+    render();
+  }
+
+  prevBtn.addEventListener("click", prev);
+  nextBtn.addEventListener("click", next);
+
+  // auto refresh every 15s (new random items)
+  setInterval(() => {
+    picks = pickRandomUnique(allProducts, 9);
+    page = 0;
+    render();
+  }, 15000);
 
   render();
 }
+
+/* ---------- START PAGE ---------- */
 
 loadProducts();
 initCarousel();
