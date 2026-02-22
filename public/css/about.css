@@ -1,0 +1,24 @@
+h1 {
+    margin-bottom: 50px;
+    font-size: 85px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    font-size: 45px;
+}
+
+p {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+}
+
+ul,li {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 25px;
+    display: block;
+}

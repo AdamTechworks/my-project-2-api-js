@@ -1,9 +1,12 @@
-/* ---------- Carousel Container ---------- */
+/* Carousel Container */
+
 
 .carousel {
-  width: 100%;
-  display: flex;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 60px 1fr 60px;
   align-items: center;
+  justify-content: center;
   margin-bottom: 40px;
   gap: 6px;
 }
@@ -19,7 +22,10 @@
   border: 1px solid #5a565614;
   cursor: pointer;
   flex-shrink: 0;
-
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+  place-self: center;
   background: rgba(255, 255, 255, 0.5);
   transition: background 0.2s ease, opacity 0.2s ease;
 }
@@ -30,17 +36,19 @@
 }
 
 
-/* ---------- 3 Card Layout ---------- */
+/* 3 Card Layout */
 
 .carousel-track {
   flex: 1;
-
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+ grid-template-columns: repeat(3, 420px);
 
-  gap: 0;
+  gap: 12px;
   margin: 0;
   padding: 0;
+  justify-items: center;
+  justify-content: center;
 }
 
 /* Each card */
@@ -52,13 +60,20 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  border-radius: 5px;
+  overflow: hidden;
+  background:white;
+
+  width: 100%;
+  max-width: 420px;
 }
 
 /* Image */
 
 .carousel-img {
   width: 100%;
-  height: 220px;
+  height: 450px;
   object-fit: cover;
   display: block;
 }
@@ -75,7 +90,7 @@
   margin: 0 0 6px;
 }
 
-/* description small */
+/* Description Small */
 
 .carousel-desc {
   font-size: 10px;

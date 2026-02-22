@@ -9,11 +9,11 @@
 
 .catalog-controls input,
 .catalog-controls select {
-  width: 260px;
+  width: 400px;
   padding: 8px 10px;
   font-size: 14px;
   border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 1px solid white;
 }
 
 .catalog-controls label {
@@ -30,13 +30,12 @@
 
 #results li {
   padding: 10px;
-  border-bottom: 1px solid #e5e5e5;
   text-align: center;
 }
 
-#results a {
+#results li a {
   text-decoration: none;
-  color: #222;
+  color: white;
   font-weight: 500;
 }
 
