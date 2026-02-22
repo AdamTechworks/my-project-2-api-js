@@ -26,7 +26,7 @@
   position: relative;
   z-index: 2;
   place-self: center;
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(188, 188, 194, 0.5);
   transition: background 0.2s ease, opacity 0.2s ease;
 }
 

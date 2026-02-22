@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Andromeda Crystal Lamp",
       "price": 39.99,
       "category": "Home",
@@ -14,7 +14,7 @@
       "description": "A soft-glow crystal lamp that adds instant galaxy vibes to any room."
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Nebula Notebook",
       "price": 12.5,
       "category": "Stationery",
@@ -27,7 +27,7 @@
       "description": "A smooth, space-themed notebook for notes, sketches, or midnight brain dumps."
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Orion Mug",
       "price": 16,
       "category": "Kitchen",
@@ -40,7 +40,7 @@
       "description": "A sturdy mug for coffee, tea, or potion-making—constellation energy included."
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Galaxy Throw Blanket",
       "price": 29.99,
       "category": "Home",
@@ -53,7 +53,7 @@
       "description": "Cozy up in a blanket that looks like a night sky—soft, warm, and ridiculously comfy."
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Star Map Poster",
       "price": 18.75,
       "category": "Decor",
@@ -66,7 +66,7 @@
       "description": "A clean star map print that makes your wall look like a planetarium."
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Meteorite Paperweight",
       "price": 22.5,
       "category": "Office",
@@ -79,7 +79,7 @@
       "description": "A heavy desk paperweight with meteor vibes—keeps papers down and mood up."
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Cosmic Phone Case",
       "price": 14.99,
       "category": "Tech",
@@ -92,7 +92,7 @@
       "description": "A galaxy-style phone case that protects your device and looks cool doing it."
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Planet Coaster Set",
       "price": 19.99,
       "category": "Kitchen",
@@ -105,7 +105,7 @@
       "description": "A set of planet-themed coasters to keep tables safe from drinks and chaos."
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Moon Phase Wall Clock",
       "price": 34.99,
       "category": "Decor",
@@ -118,7 +118,7 @@
       "description": "A moon-phase inspired wall clock that turns ‘what time is it’ into a vibe."
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Asteroid Keychain",
       "price": 7.5,
       "category": "Accessories",
@@ -131,7 +131,7 @@
       "description": "A small keychain with big space energy—easy to spot, hard to lose."
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Rocket Ship Lamp",
       "price": 27.99,
       "category": "Home",
@@ -144,7 +144,7 @@
       "description": "A fun rocket-shaped lamp that adds warm light and launch-day vibes."
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Astronaut Figurine",
       "price": 15,
       "category": "Decor",
@@ -157,7 +157,7 @@
       "description": "A small astronaut figure for shelves, desks, or anywhere you need a tiny explorer."
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Stargazer Journal",
       "price": 13.99,
       "category": "Stationery",
@@ -170,7 +170,7 @@
       "description": "A journal made for night thoughts, dream logs, and planning your next cosmic era."
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Comet Pen Set",
       "price": 11.99,
       "category": "Office",
@@ -183,7 +183,7 @@
       "description": "A smooth-writing pen set for school, work, or writing dramatic villain monologues."
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Solar System Puzzle",
       "price": 21.99,
       "category": "Games",
@@ -196,7 +196,7 @@
       "description": "A solar-system themed puzzle that’s fun, chill, and secretly educational."
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Galaxy Water Bottle",
       "price": 17.99,
       "category": "Accessories",
@@ -209,7 +209,7 @@
       "description": "A reusable water bottle with a galaxy design—hydration, but make it cosmic."
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Lunar Night Light",
       "price": 20.99,
       "category": "Home",
@@ -222,7 +222,7 @@
       "description": "A gentle moon-inspired night light that makes bedtime feel like a calm planet."
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Satellite Desk Lamp",
       "price": 32.99,
       "category": "Office",
@@ -235,7 +235,7 @@
       "description": "A desk lamp with clean, modern lines—bright enough for work, cool enough for display."
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Constellation Hoodie",
       "price": 42.5,
       "category": "Clothing",
@@ -248,7 +248,7 @@
       "description": "A warm hoodie with constellation vibes—soft on the inside, main character on the outside."
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Space Sticker Pack",
       "price": 8.99,
       "category": "Accessories",
@@ -261,175 +261,215 @@
       "description": "A sticker pack full of space icons—perfect for laptops, bottles, notebooks, and chaos."
     },
     {
-      "id": 21,
+      "id": "21",
       "name": "Aurora Star Candle",
       "price": 18.99,
       "category": "Home",
       "tags": [
-            "candle",
-            "aurora",
-            "cozy"
-          ],
+        "candle",
+        "aurora",
+        "cozy"
+      ],
       "image": "/images/aurora-star-candle.jpg",
       "description": "A galaxy-inspired candle with a soft glow vibe—perfect for chill nights and main-character mood lighting."
     }
   ],
-
-
   "reviews": [
     {
-      "id": 1,
+      "id": "1",
       "productId": 1,
       "name": "Lena Morales",
       "rating": 5,
       "comment": "The glow is perfect. Instant cozy galaxy corner."
     },
     {
-      "id": 2,
+      "id": "2",
       "productId": 2,
       "name": "Marcus Chen",
       "rating": 4,
       "comment": "Paper quality feels good and it lays flat. Solid buy."
     },
     {
-      "id": 3,
+      "id": "3",
       "productId": 3,
       "name": "Ava Thompson",
       "rating": 5,
       "comment": "Best mug ever. I would drink hot chocolate from it forever."
     },
     {
-      "id": 4,
+      "id": "4",
       "productId": 4,
       "name": "Noah Patel",
       "rating": 5,
       "comment": "Super soft. It’s become the default couch blanket."
     },
     {
-      "id": 5,
+      "id": "5",
       "productId": 5,
       "name": "Sophie Bennett",
       "rating": 4,
       "comment": "Looks clean on the wall and the print is crisp."
     },
     {
-      "id": 6,
+      "id": "6",
       "productId": 6,
       "name": "Ethan Walker",
       "rating": 4,
       "comment": "Heavy enough to actually work as a paperweight. Cute too."
     },
     {
-      "id": 7,
+      "id": "7",
       "productId": 7,
       "name": "Mia Rodriguez",
       "rating": 4,
       "comment": "Fits well and feels sturdy. Design is sick."
     },
     {
-      "id": 8,
+      "id": "8",
       "productId": 8,
       "name": "Oliver Grant",
       "rating": 5,
       "comment": "They look adorable on the table and don’t slide around."
     },
     {
-      "id": 9,
+      "id": "9",
       "productId": 9,
       "name": "Charlotte Kim",
       "rating": 5,
       "comment": "Moon phase vibe is elite. It’s a conversation starter."
     },
     {
-      "id": 10,
+      "id": "10",
       "productId": 10,
       "name": "Lucas Rivera",
       "rating": 4,
       "comment": "Tiny but cute. My keys are easier to find now."
     },
     {
-      "id": 11,
+      "id": "11",
       "productId": 11,
       "name": "Henry Collins",
       "rating": 5,
       "comment": "Rocket lamp = coolest thing in my room."
     },
     {
-      "id": 12,
+      "id": "12",
       "productId": 12,
       "name": "Emily Foster",
       "rating": 4,
       "comment": "Looks great on a shelf. Little astronaut energy boost."
     },
     {
-      "id": 13,
+      "id": "13",
       "productId": 13,
       "name": "Daniel Brooks",
       "rating": 4,
       "comment": "Nice journal. Good for notes and planning."
     },
     {
-      "id": 14,
+      "id": "14",
       "productId": 14,
       "name": "Grace Nguyen",
       "rating": 5,
       "comment": "Writes smooth and doesn’t smudge. I’m obsessed."
     },
     {
-      "id": 15,
+      "id": "15",
       "productId": 15,
       "name": "Logan Price",
       "rating": 5,
       "comment": "Fun puzzle and I learned planet names again."
     },
     {
-      "id": 16,
+      "id": "16",
       "productId": 16,
       "name": "Isabella Cruz",
       "rating": 4,
       "comment": "Cute bottle and doesn’t leak in my bag."
     },
     {
-      "id": 17,
+      "id": "17",
       "productId": 17,
       "name": "Caleb Turner",
       "rating": 5,
       "comment": "Perfect soft light for the hallway at night."
     },
     {
-      "id": 18,
+      "id": "18",
       "productId": 18,
       "name": "Harper Scott",
       "rating": 4,
       "comment": "Bright and clean looking. Makes the desk feel official."
     },
     {
-      "id": 19,
+      "id": "19",
       "productId": 19,
       "name": "Jack Sullivan",
       "rating": 5,
       "comment": "Comfy and warm. The star design is subtle but cool."
     },
-        {
-      "id": 20,
+    {
+      "id": "20",
       "productId": 20,
       "name": "Ella Peterson",
       "rating": 5,
       "comment": "Stickers!!! I put them on everything."
     },
     {
-      "id": 21,
+      "id": "21",
       "productId": 21,
       "name": "Priya Desai",
       "rating": 5,
       "comment": "Smells amazing and the glow is so cozy. Instant vibe upgrade."
     },
     {
-      "id": 22,
+      "id": "22",
       "productId": 21,
       "name": "Jordan Miller",
       "rating": 4,
       "comment": "Burns evenly and looks cute on the shelf. Would buy again."
+    }
+  ],
+  "messages": [
+    {
+      "id": "3ebf",
+      "name": "ssdfsadf",
+      "email": "flashadam83@gmail.com",
+      "product": "asdfsdf",
+      "message": "asdfsdfsdaf",
+      "createdAt": "2026-02-22T17:23:27.666Z"
+    },
+    {
+      "id": "8cfa",
+      "name": "ddDas",
+      "email": "sd@a.com",
+      "product": "dsfsdf",
+      "message": "sdfsdf",
+      "createdAt": "2026-02-22T17:24:50.259Z"
+    },
+    {
+      "id": "bb3b",
+      "name": "sdfsd",
+      "email": "dsfsd@a.com",
+      "product": "dsfsd",
+      "message": "sdfsdf",
+      "createdAt": "2026-02-22T17:25:27.204Z"
+    },
+    {
+      "id": "b70b",
+      "name": "asasdasd",
+      "email": "flashadam83@gmail.com",
+      "product": "sdfsdfdas",
+      "message": "afasdasda",
+      "createdAt": "2026-02-22T17:33:16.955Z"
+    },
+    {
+      "id": "cfda",
+      "name": "asdasd",
+      "email": "a@a.com",
+      "product": "asdd",
+      "message": "sadasd",
+      "createdAt": "2026-02-22T17:33:30.416Z"
     }
   ]
 }

@@ -24,13 +24,22 @@ function renderProducts(products) {
   products.forEach((p) => {
     const li = document.createElement("li");
 
-    const a = document.createElement("a");
-    a.href = `/product.html?id=${p.id}`;
-    a.textContent = `${p.name} - $${p.price}`;
-    a.style.textDecoration = "none";
+      const a = document.createElement("a");
+      a.href = `/product.html?id=${p.id}`;
+      a.className = "product-card-link";
 
-    li.appendChild(a);
-    results.appendChild(li);
+      a.innerHTML = `
+        <div class="product-card">
+        <img class="product-thumb" src="${p.image}" alt="${p.name}">
+        <div class="product-meta">
+          <div class="product-title">${p.name}</div>
+          <div class="product-price">$${p.price}</div>
+        </div>
+      </div>
+`;
+
+      li.appendChild(a);
+      results.appendChild(li);
   });
 }
 

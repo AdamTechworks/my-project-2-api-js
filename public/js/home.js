@@ -11,16 +11,26 @@ async function loadProducts() {
   const list = document.getElementById("productList");
   list.innerHTML = "";
 
-  products.forEach(product => {
-    const li = document.createElement("li");
+  products.forEach((product) => {
+  const li = document.createElement("li");
 
-    const link = document.createElement("a");
-    link.href = `/product.html?id=${product.id}`;
-    link.textContent = `${product.name} - $${product.price}`;
+  const link = document.createElement("a");
+  link.href = `/product.html?id=${product.id}`;
+  link.className = "product-card-link";
 
-    li.appendChild(link);
-    list.appendChild(li);
-  });
+  link.innerHTML = `
+    <div class="product-card">
+      <img class="product-thumb" src="${product.image}" alt="${product.name}">
+      <div class="product-meta">
+        <div class="product-title">${product.name}</div>
+        <div class="product-price">$${product.price}</div>
+      </div>
+    </div>
+  `;
+
+  li.appendChild(link);
+  list.appendChild(li);
+});
 }
 
 /* ---------- CAROUSEL ---------- */

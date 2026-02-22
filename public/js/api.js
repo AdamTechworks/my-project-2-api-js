@@ -34,3 +34,14 @@ export async function addReview(review) {
   if (!res.ok) throw new Error("Failed to add review");
   return res.json();
 }
+
+export async function addMessage(message) {
+  const res = await fetch(`${BASE_URL}/messages`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(message)
+  });
+
+  if (!res.ok) throw new Error("Failed to send message");
+  return res.json();
+}

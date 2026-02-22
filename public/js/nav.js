@@ -6,7 +6,8 @@ export function loadNav(activePage = "") {
   nav.innerHTML = `
     <a href="/index.html" class="${activePage === "home" ? "active" : ""}">Home</a> |
     <a href="/catalog.html" class="${activePage === "catalog" ? "active" : ""}">Catalog</a> |
-    <a href="/about.html" class="${activePage === "about" ? "active" : ""}">About</a>
+    <a href="/about.html" class="${activePage === "about" ? "active" : ""}">About</a> |
+    <a href="/contact.html" class="${activePage === "contact" ? "active" : ""}">Contact</a>
     <hr />
   `;
 }
