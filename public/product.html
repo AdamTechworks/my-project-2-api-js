@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Product</title>
   <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="/css/product.css" />
 </head>
 <body>
 
@@ -20,18 +21,18 @@
     <hr />
 
     <section>
-      <h2>Reviews</h2>
+      <h2> Customer Reviews</h2>
       <ul id="reviewList"></ul>
     </section>
 
     <hr />
 
     <section>
-      <h3>Add a Review</h3>
+      <h2>Write us a Review</h2>
       <form id="reviewForm">
         <input id="reviewName" placeholder="Your name" required />
         <input id="reviewRating" type="number" min="1" max="5" placeholder="Rating 1-5" required />
-        <input id="reviewComment" placeholder="Comment" required />
+        <textarea id="reviewComment" placeholder="Comment" rows="5" cols="10" required></textarea>
         <button type="submit">Submit</button>
         <p id="reviewStatus"></p>
       </form>

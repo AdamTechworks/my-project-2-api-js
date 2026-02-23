@@ -1,0 +1,125 @@
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* product detail page */
+
+.product-detail {
+  background: #1e293b;
+  border-radius: 12px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  transition: transform .15s ease;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 400px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* TEXT */
+
+.product-detail h2 {
+  margin: 0;
+  font-size: 38px;
+}
+
+.product-detail p {
+  max-width: 600px;
+  font-size: 25px;
+}
+
+/* REVIEWS LIST */
+
+#reviewList {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#reviewList li {
+  width:950px;
+  margin-left: 10px;
+  background: #1e293b;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  transition: background .15s ease;
+}
+
+#reviewList li:hover {
+  background: #334155;
+}
+
+/* REVIEW FORM */
+#reviewForm {
+  margin-top: 25px;
+  background: #1e293b;
+  padding: 18px;
+  border-radius: 12px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* ← THIS centers the boxes */
+  gap: 10px;
+}
+
+#reviewForm input,
+#reviewForm textarea {
+  width: 100%;
+  max-width: 800px;   /* nice readable form width */
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: inherit;
+}
+
+#reviewForm textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+#reviewForm input:focus,
+#reviewForm textarea:focus {
+  box-shadow: 0 0 0 3px #60a5fa;
+  outline: none;
+}
+
+#reviewForm button {
+  width: 85%;
+  margin-top: 10px;
+  padding: 12px 0;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease;
+}
+
+#reviewForm button:hover {
+  background: #3b82f6;
+  transform: translateY(-2px);
+}
+
+#reviewStatus {
+  margin-top: 5px;
+  color: #93c5fd;
+}
