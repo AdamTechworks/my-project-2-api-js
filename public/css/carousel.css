@@ -95,3 +95,18 @@
   font-size: 18px;
   margin-bottom: 5px;
 }
+
+@media (max-width: 800px) {
+  .carousel-track {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .carousel-btn {
+    height: 60px;              
+  }
+
+  .carousel-img {
+    height: 260px;              
+  }
+}

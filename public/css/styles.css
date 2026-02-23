@@ -2,6 +2,10 @@
 body {
     max-width: 1100px;
     margin: 0 auto;
+    background-color: #0f172a;
+    color: white;
+    padding: 20px;
+    line-height: 1.6;
 }
 
 /*  main styles for the entire site  */
@@ -10,13 +14,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-body {
-  background-color: #0f172a;
-  color: white;
-  padding: 20px;
-  line-height: 1.6;
 }
 
 h1 {
@@ -98,7 +95,7 @@ input {
 
   ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 15px;
   }
 
@@ -112,24 +109,38 @@ input {
 
 }
 
+@media (max-width: 700px) {
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .product-image {
+    width: 100%;
+  }
+}
 
 /* product container*/
 
 .container {
-  max-width: 100%;
+  width: 100%;
+  max-width: 900px;
   margin: 0 auto;
   padding: 16px;
 }
+
+
 
 .product-detail {
   display: flex;
   gap: 16px;
   align-items: flex-start;
+  flex-wrap: wrap;
 }
 
 .product-image {
   width: 240px;
-  max-width: 40vw;
+  max-width: 100%;
+  height: auto;
   border-radius: 8px;
 }
 
@@ -168,4 +179,9 @@ input {
   opacity: 0.9;
   color: #cbd5f5;
   font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
