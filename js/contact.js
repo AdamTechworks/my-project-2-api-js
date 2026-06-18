@@ -1,8 +1,8 @@
 
 console.log("✅ contact.js loaded");
 
-import { loadNav } from "/js/nav.js";
-import { addMessage } from "/js/api.js";
+import { loadNav } from "./nav.js";
+import { addMessage } from "./api.js";
 
 loadNav("contact");
 

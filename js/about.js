@@ -1,3 +1,3 @@
-import { loadNav } from "/js/nav.js";
+import { loadNav } from "./nav.js";
 
 loadNav("about");

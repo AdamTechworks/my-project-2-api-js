@@ -1,5 +1,5 @@
-import { loadNav } from "/js/nav.js";
-import { getProducts } from "/js/api.js";
+import { loadNav } from "./nav.js";
+import { getProducts } from "./api.js";
 
 loadNav("catalog");
 
@@ -25,7 +25,7 @@ function renderProducts(products) {
     const li = document.createElement("li");
 
       const a = document.createElement("a");
-      a.href = `/product.html?id=${p.id}`;
+      a.href = `./product.html?id=${p.id}`;
       a.className = "product-card-link";
 
       a.innerHTML = `

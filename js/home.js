@@ -1,6 +1,5 @@
-import { loadNav } from "/js/nav.js";
-import { getProducts } from "/js/api.js";
-
+import { loadNav } from "./nav.js";
+import { getProducts } from "./api.js";
 loadNav("home");
 
 /* ---------- PRODUCT LIST (bottom of page) ---------- */
@@ -15,7 +14,7 @@ async function loadProducts() {
   const li = document.createElement("li");
 
   const link = document.createElement("a");
-  link.href = `/product.html?id=${product.id}`;
+  link.href = `./product.html?id=${product.id}`;
   link.className = "product-card-link";
 
   link.innerHTML = `
@@ -66,7 +65,7 @@ async function initCarousel() {
     visible.forEach(product => {
       const card = document.createElement("a");
       card.className = "carousel-card";
-      card.href = `/product.html?id=${product.id}`;
+      card.href = `./product.html?id=${product.id}`;
 
       card.innerHTML = `
         <img class="carousel-img" src="${product.image}" alt="${product.name}">
